@@ -23,8 +23,8 @@ submit.addEventListener('click', (e) => {
     e.preventDefault();
     const feedback = document.querySelector('.feedback');
 
-    const a = document.querySelector('#a').value;
-    const b = document.querySelector('#b').value;
+    const a = document.querySelector('#a').valueAsNumber;
+    const b = document.querySelector('#b').valueAsNumber;
 
     const { validar, menssage } = validate(a, b);
 
